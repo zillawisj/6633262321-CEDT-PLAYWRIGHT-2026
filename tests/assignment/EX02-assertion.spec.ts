@@ -50,4 +50,15 @@ test.describe('Assignment 2 : Assertion', () => {
         await expect(bookButton).toBeVisible();
         await expect(bookButton).toBeEnabled();
     });
+    test('Verify Appointment Form Elements', async ({ page }) => {
+
+        await page.screenshot({ path: 'test-results/assignment2-filled-form.png' });
+
+        // 9. Verify that book appointment button is displayed and enabled
+        const bookButton = page.locator('#btn-book-appointment');
+        await expect(bookButton).toBeVisible();
+        await expect(bookButton).toBeEnabled();
+        
+        await page.screenshot({ path: 'test-results/assignment2-final-check.png' });
+    });
 });
