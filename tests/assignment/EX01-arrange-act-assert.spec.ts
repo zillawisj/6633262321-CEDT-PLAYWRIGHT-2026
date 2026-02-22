@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+// Final commit for submission
+// for PR
 // Arrange - กำหนด URL พื้นฐาน
 const URL = 'https://katalon-demo-cura.herokuapp.com/';
 
