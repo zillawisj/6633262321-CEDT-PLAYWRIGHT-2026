@@ -4,6 +4,8 @@ import { LoginPage } from '../pages/LoginPage';
 test('Make Appointment Success Test', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
+  // final update
+  
   // 1. Navigate ไปยัง URL ที่กำหนดใน Environment Variable
   await page.goto('./');
 
